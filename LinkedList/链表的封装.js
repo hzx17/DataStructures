@@ -133,16 +133,26 @@ function LinkedList(){
       while(current) {
         if(current===this.head && current.data === element) {
           this.head = current.next
+          this.length -=1
           return true
         }
         else if(current.data === element) {
           previous.next = current.next
+          this.length -=1
           return true
         }
         previous = current
         current = current.next
       }
       return console.log('未找到要删除的元素')
+    }
+    // 是否为空,为空返回true，有其他元素返回false
+    LinkedList.prototype.isEmpty = function () {
+      return (this.length ==0)
+    }
+    // 判断链表的个数，即返回链表的长度
+    LinkedList.prototype.size = function () {
+      return this.length
     }
 }
 //实例化链表
@@ -156,7 +166,7 @@ linklist.append(14);
 // linklist.insert("我是插入的",3)
 // linklist.update("我修改了第一个",0)
 // linklist.removeAt(0)
-linklist.remove(11)
+linklist.remove(12)
 console.log(linklist)
 console.log( linklist.indexOf(15))
 console.log(linklist.get(1))
