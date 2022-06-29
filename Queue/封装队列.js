@@ -4,7 +4,7 @@
  * @Author: hezhixing
  * @Date: 2022-03-08 20:42:42
  * @LastEditors: hezhixing
- * @LastEditTime: 2022-03-10 19:25:12
+ * @LastEditTime: 2022-06-28 19:46:32
  */
 /* 封装队列类 */
 function Queue(){
