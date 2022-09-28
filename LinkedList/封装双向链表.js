@@ -158,8 +158,8 @@ function DoublyLinkedList () {
     //   current = current.next
     // }
     // return console.log('未找到元素')
-    // let index =this.indexOf(element)
-    // this.removeAt(index)
+    let index =this.indexOf(element)
+    this.removeAt(index)
   }
   //转换成字符串形式
   DoublyLinkedList.prototype.toString = function() {
