@@ -7,6 +7,7 @@
   Queue.prototype.enqueue=function(element){
       this.items.push(element)
   }
+  
   //从队列中删除前端元素
   Queue.prototype.dequeue=function(){
   return this.items.shift();
