@@ -12,7 +12,7 @@ function ArrayList () {
   }
   // 将交换两个位置的方法抽取
   ArrayList.prototype.swap = function (m, n) {
-    // 交换两个位置数据
+    // 交换两个位置数据代码
     let temp = this.items[m]
     this.items[m] = this.items[n]
     this.items[n] = temp
